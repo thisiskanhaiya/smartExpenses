@@ -35,4 +35,70 @@ public class Budget {
 
     @Column(nullable = false)
     private LocalDate periodEnd;
+
+    public Budget(BigDecimal amount, Category category, Long id, LocalDate periodEnd, LocalDate periodStart, AllUsers user) {
+        this.amount = amount;
+        this.category = category;
+        this.id = id;
+        this.periodEnd = periodEnd;
+        this.periodStart = periodStart;
+        this.user = user;
+    }
+
+    public Budget() {
+    }
+
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public AllUsers getUser() {
+        return user;
+    }
+
+    public void setUser(AllUsers user) {
+        this.user = user;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public LocalDate getPeriodStart() {
+        return periodStart;
+    }
+
+    public void setPeriodStart(LocalDate periodStart) {
+        this.periodStart = periodStart;
+    }
+
+    public LocalDate getPeriodEnd() {
+        return periodEnd;
+    }
+
+    public void setPeriodEnd(LocalDate periodEnd) {
+        this.periodEnd = periodEnd;
+    }
+
+    
+
+
 }

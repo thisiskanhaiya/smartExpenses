@@ -18,7 +18,7 @@ public class Expense {
     private long expenseId;
     @ManyToOne(fetch=FetchType.LAZY,optional=false)
     @JoinColumn(name="userId",nullable=false)
-    private AllUsers allUsers;
+    private AllUsers user;
     @ManyToOne(fetch=FetchType.LAZY,optional=false)
     @JoinColumn(name="categoryId",nullable=false)
     private Category category;

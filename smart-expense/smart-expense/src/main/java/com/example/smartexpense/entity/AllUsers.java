@@ -18,6 +18,7 @@ public class AllUsers {
     private long userId;
     private String username;
     private String email;
+    private String password;
     
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Expense> expenses = new ArrayList<>();
@@ -28,10 +29,11 @@ public class AllUsers {
 
     
 
-    public AllUsers(long userId, String username, String email) {
+    public AllUsers(long userId, String username, String email , String password) {
         this.userId = userId;
         this.username = username;
         this.email = email;
+        this.password = password;
     }
 
 
@@ -47,6 +49,9 @@ public class AllUsers {
     public String getEmail() {
         return email;
     }
+     public String getPassword() {
+        return password;
+    }
 
     public void setUserId(long userId) {
         this.userId = userId;
@@ -59,7 +64,9 @@ public class AllUsers {
     public void setEmail(String email) {
         this.email = email;
     }
-    
+    public void setPassword(String email) {
+        this.password = password;
+    }
     
 
 }

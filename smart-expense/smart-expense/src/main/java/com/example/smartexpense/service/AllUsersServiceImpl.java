@@ -25,4 +25,6 @@ public class AllUsersServiceImpl implements AllUsersService {
         return allUsersRepo.findAll();
     }
 
+ 
+
 }

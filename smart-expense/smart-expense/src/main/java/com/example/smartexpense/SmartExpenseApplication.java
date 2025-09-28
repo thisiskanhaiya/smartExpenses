@@ -1,4 +1,4 @@
-package com.example.smart_expense;
+package com.example.smartexpense;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
